@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jannah Mae Arquisal | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--bg:#fdf4f7;--card:#ffffff;--ink:#2b1630;--muted:#6e5a74;--pink:#a13d6c;--pinkd:#7e2754;--lilac:#e9dcf5;--sun:#ffd166;--line:#ecdbe4;--onpink:#ffffff;--hl:#ffd9ea;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#1a1020;--card:#261830;--ink:#f6ebf4;--muted:#bba6c2;--pink:#e0679b;--pinkd:#c24f84;--lilac:#3a2650;--sun:#ffd166;--line:#3a2848;--onpink:#2b1630;--hl:#5a2a46}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#1a1020;--card:#261830;--ink:#f6ebf4;--muted:#bba6c2;--pink:#e0679b;--pinkd:#c24f84;--lilac:#3a2650;--sun:#ffd166;--line:#3a2848;--onpink:#2b1630;--hl:#5a2a46}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.7 Figtree,system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:clip}
+h1,h2,h3,h4{font-family:"Bricolage Grotesque",system-ui,sans-serif;margin:0;line-height:1.05}
+a:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 clamp(1rem,4vw,2rem)}
+header{position:sticky;top:0;z-index:20;padding:.8rem 0;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px)}
+nav{display:flex;gap:.3rem;justify-content:center;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);border-radius:99px;padding:.35rem;width:fit-content;margin:0 auto}
+nav a{color:var(--muted);text-decoration:none;font-weight:600;font-size:.95rem;padding:.5rem 1.1rem;border-radius:99px;transition:background .2s,color .2s}
+nav a:hover{color:var(--ink);background:var(--lilac)}
+nav a.active{background:var(--pink);color:var(--onpink)}
+section{padding:3.5rem 0}
+.num{display:inline-block;font-size:.85rem;font-weight:600;color:var(--pinkd);background:var(--lilac);padding:.25rem .8rem;border-radius:99px;margin:0 0 1rem}
+.hero{display:grid;grid-template-columns:1.5fr 1fr;gap:2rem;align-items:center;padding-top:2rem}
+.hero h2{font-size:clamp(2.8rem,7vw,5.4rem);font-weight:800;letter-spacing:-.03em}
+.hero h2 em{font-style:normal;background:linear-gradient(transparent 58%,var(--hl) 58%);padding:0 .1em}
+.lead{font-size:1.15rem;color:var(--muted);max-width:34rem;margin:1.4rem 0 2rem}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:.85rem 1.6rem;border-radius:99px;background:var(--pink);color:var(--onpink);border:2px solid var(--pink);margin:.2rem .5rem .2rem 0;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px);background:var(--pinkd);border-color:var(--pinkd)}
+.btn.alt{background:none;color:var(--ink);border-color:var(--ink)}
+.btn.alt:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.profile{background:var(--pink);color:var(--onpink);border-radius:2rem 2rem 2rem .4rem;padding:2rem 1.6rem;text-align:center;display:flex;flex-direction:column;align-items:center;transform:rotate(1.5deg)}
+.avatar{width:8rem;aspect-ratio:1;border-radius:50%;background:var(--sun);display:grid;place-items:center;margin-bottom:1.2rem;overflow:hidden}
+.avatar div{font:800 2.6rem "Bricolage Grotesque",sans-serif;color:#2b1630}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.profile h1{font-size:1.7rem;font-weight:800}
+.sub{margin:.5rem 0 1.4rem;opacity:.9;font-size:.95rem}
+.side-foot{font-size:.8rem;opacity:.8;margin:0}
+h3.sec{font-size:clamp(2rem,4.5vw,3.2rem);font-weight:800;letter-spacing:-.02em;margin-bottom:1.4rem}
+.about{background:var(--card);border:1px solid var(--line);border-radius:1.6rem;padding:clamp(1.4rem,4vw,2.4rem);max-width:none}
+.about p{margin:0;max-width:46rem;font-size:1.1rem}
+.skills{list-style:none;margin:0;padding:0;display:grid;gap:1rem}
+.skills li{background:var(--card);border:1px solid var(--line);border-radius:1.2rem;padding:1.2rem 1.4rem;display:grid;gap:.7rem}
+.skills b{display:flex;justify-content:space-between;align-items:center;gap:1rem;font:600 1.15rem "Bricolage Grotesque",sans-serif}
+.skills i{font:600 .85rem Figtree,sans-serif;font-style:normal;background:var(--lilac);color:var(--pinkd);padding:.2rem .8rem;border-radius:99px}
+.track{height:.9rem;border-radius:99px;background:var(--lilac);overflow:hidden}
+.track span{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--pink),var(--sun))}
+.feature{display:grid;grid-template-columns:minmax(0,22rem) 1fr;gap:clamp(1.5rem,5vw,3.5rem);align-items:center;background:var(--card);border:1px solid var(--line);border-radius:2rem;padding:clamp(1.2rem,3.5vw,2.2rem)}
+.shot{position:relative;justify-self:center;width:100%;max-width:22rem}
+.shot::before{content:"";position:absolute;inset:0;transform:translate(.9rem,.9rem) rotate(2deg);border-radius:1.2rem;background:var(--pink)}
+.shot img{position:relative;display:block;width:100%;height:auto;border-radius:1.2rem;border:3px solid var(--card);box-shadow:0 1rem 2.5rem rgba(20,5,30,.35)}
+.info .n{display:block;font:800 3.4rem "Bricolage Grotesque",sans-serif;color:var(--pink);line-height:1;margin-bottom:.4rem}
+.info h4{font-size:clamp(1.8rem,3.6vw,2.6rem);font-weight:800;letter-spacing:-.02em}
+.info .tag{margin:.5rem 0 1rem;color:var(--pinkd);font-weight:600}
+.info p{margin:0 0 1rem;color:var(--muted)}
+.chips{list-style:none;margin:0 0 1.4rem;padding:0;display:flex;flex-wrap:wrap;gap:.5rem}
+.chips li{font-size:.85rem;font-weight:600;background:var(--lilac);color:var(--pinkd);padding:.25rem .9rem;border-radius:99px}
+.team h5{margin:0 0 .6rem;font:600 1.05rem "Bricolage Grotesque",sans-serif}
+.team .chips{margin:0}
+.team .chips li{background:none;border:1.5px solid var(--line);color:var(--ink)}
+.team .chips li:first-child{border-color:var(--pink)}
+.contact{background:var(--ink);color:var(--bg);padding:clamp(2rem,5vw,3.5rem);border-radius:2rem;position:relative;overflow:hidden}
+.contact::after{content:"";position:absolute;right:-3rem;top:-3rem;width:12rem;height:12rem;border-radius:50%;background:var(--pink);opacity:.9}
+.contact>*{position:relative;z-index:1}
+.contact .num{background:var(--sun);color:#2b1630}
+.contact h3{font-size:clamp(2rem,4.5vw,3.2rem);font-weight:800;margin-bottom:.8rem}
+.contact p{margin:0 0 1.4rem;max-width:30rem;opacity:.9}
+.contact .btn{background:var(--sun);border-color:var(--sun);color:#2b1630}
+.contact .btn:hover{background:#fff;border-color:#fff}
+.ph{background:var(--hl);border-radius:.3rem;padding:0 .2em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.contact .ph{background:rgba(255,255,255,.18)}
+.skills i.ph{background:var(--lilac);padding:.2rem .8rem;border-radius:99px}
+footer{color:var(--muted);font-size:.9rem;padding:2rem 0 1rem;text-align:center}
+@media (max-width:820px){
+.hero{grid-template-columns:1fr}
+.feature{grid-template-columns:1fr}
+.shot{max-width:18rem}
+.profile{transform:none;order:-1}
+.contact::after{width:8rem;height:8rem}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,nav a{transition:none}}
+</style>
+</head>
+<body>
+<header>
+  <nav id="nav" aria-label="Main">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="wrap">
+<main>
+  <section id="home" class="hero">
+    <div>
+      <p class="num">WELCOME</p>
+      <h2>Hello, I’m <em>Jannah Mae</em> Arquisal.</h2>
+      <p class="lead ph">.Hi! I’m a friendly and hardworking person who enjoys learning new things and meeting new people. I’m always willing to improve myself, face new challenges, and grow as a person. Nice to meet you!</p>
+      <a class="btn" href="#projects">View my work</a><a class="btn alt" href="#contact">Contact me</a>
+    </div>
+    <aside class="profile">
+      <div class="avatar"><img src="jannah.jpg" alt="Jannah Mae Arquisal"></div>
+      <h1>Jannah Mae Arquisal</h1>
+      <p class="sub">BSIT Student</p>
+      <p class="side-foot">&copy; <span id="y">2026</span> Jannah Mae Arquisal</p>
+    </aside>
+  </section>
+
+  <section id="about">
+    <p class="num">01 — ABOUT</p>
+    <h3 class="sec">About me</h3>
+    <div class="about"><p class="ph">I am a simple, friendly, and hardworking person. I enjoy learning new things, spending time with my family and friends, and improving myself. I believe in being kind, staying positive, and working hard to achieve my goals. I always try my best and see every challenge as an opportunity to grow., BSIT 4 - SEC 8,   I want to learn new skills, improve my communication, gain more knowledge, and become more confident .</p></div>
+  </section>
+
+  <section id="skills">
+    <p class="num">02 — SKILLS</p>
+    <h3 class="sec">Skills</h3>
+    <ul class="skills">
+      <li><b>CSS one <i class="ph">learning</i></b><div class="track"><span style="width:85%"></span></div></li>
+      <li><b>HTML two <i class="ph">Comfortable</i></b><div class="track"><span style="width:70%"></span></div></li>
+      <li><b>TeamWork three <i class="ph">Strong</i></b><div class="track"><span style="width:55%"></span></div></li>
+    </ul>
+  </section>
+
+   <section id="projects">
+    <p class="num">03 — PROJECTS</p>
+    <h3 class="sec">Selected work</h3>
+    <article class="proj feature">
+      <div class="shot"><img src="image.png" width="432" height="631" alt="Dungeon Monster Warrior game poster: a purple monster warrior holding a sword under a full moon"></div>
+      <div class="info">
+        <span class="n">01</span>
+        <h4>Dungeon Monster Warrior</h4>
+        <p class="tag">A dark fantasy 2D action game</p>
+        <p>Play as the purple monster warrior on a brutal quest for ultimate revenge against the king’s elite guard. Built as a team project.</p>
+        <p>I designed the game poster in Canva and helped with the visual look of the dark fantasy theme, from the colors to the layout.</p>
+        <ul class="chips"><li>2D Action</li><li>Dark Fantasy</li><li>13+</li></ul>
+        <div class="team">
+          <h5>Dev team</h5>
+          <ul class="chips"><li>Jannah Mae Arquisal</li><li>Jad Jonmer Delgado</li><li>Jaylord Sajulga</li><li>Carlo Selim</li><li>Kurt Layam</li></ul>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <p class="num">04 — CONTACT</p>
+      <h3>Let’s work together</h3>
+      <p>Want to talk about my work? <span class="ph">jannahmaearquisal@gmail.com</span></p>
+      <a class="btn" href="#home">Back to top</a>
+    </div>
+    <footer>&copy; <span id="y2">2026</span> Jannah Mae Arquisal</footer>
+  </section>
+</main>
+</div>
+
+<script>
+var y=new Date().getFullYear();document.getElementById('y').textContent=y;document.getElementById('y2').textContent=y;
+var links=document.querySelectorAll('#nav a');
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)links.forEach(function(a){a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id)})})},{rootMargin:'-40% 0px -50% 0px'});
+  ['home','about','skills','projects','contact'].forEach(function(id){io.observe(document.getElementById(id))});
+}
+</script>
+</body>
+</html>
